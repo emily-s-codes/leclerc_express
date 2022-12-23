@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+
+ul {
+    margin: 20px 50px 50px 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li a {
+    text-decoration: none;
+    color: darkred;
+    background-color: ghostwhite;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+ul li a:hover,
+.active {
+    color: ghostwhite;
+    background-color: darkred;
+    border: 2px solid darkred;
+}
+
+h1 {
+    font-size: 3rem;
+    color: darkred;
+    font-family: "Poppins-Bold", sans-serif;
+}
+
+a {
+    font-size: 1rem;
+    font-family: "Poppins-Regular", sans-serif;
+}
+
+p {
+    font-size: 1.4rem;
+    color: darkred;
+    font-family: "Poppins-Regular", sans-serif;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* =================================
+        home
+ ================================= */
+.indexBody,
+.aboutBody {
+    background-image: url("../img/bg.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeMain {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 100px;
+}
+
+.homeMain .homeText {
+    margin-right: 50px;
+}
+
+.homeMain img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.indexFooter {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.indexFooter .footerContainer .footerText {
+    color: ghostwhite;
+}
+
+/* =================================
+        about
+ ================================= */
+.aboutMain {
+    margin: 50px 50px 0 50px;
+    background-color: rgba(71, 68, 69, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.aboutMain h1 {
+    color: ghostwhite;
+}
+
+.aboutMain p {
+    margin: 10px 0 0 0;
+    color: ghostwhite;
+}
+
+.aboutMain p a {
+    font-size: 1.4rem;
+    color: ghostwhite;
+    font-family: "Poppins-Bold", sans-serif;
+}
+
+.aboutMain p a:hover {
+    color: rgb(220, 4, 4);
+}
+
+.aboutFooter {
+    margin: 10px 50px 0 50px;
+    background-color: rgba(71, 68, 69, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.aboutFooter p {
+    color: ghostwhite;
+}
+
+.aboutFooter a {
+    font-size: 1.4rem;
+    color: ghostwhite;
+    font-family: "Poppins-Bold", sans-serif;
+}
+
+.aboutFooter a:hover {
+    color: rgb(220, 4, 4);
+}
+
+/* =================================
+        gallery
+ ================================= */
+.galleryImages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.galleryImages img {
+    width: 200px;
+    border-radius: 10px;
+}
