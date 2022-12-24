@@ -55,16 +55,32 @@ p {
     font-family: "Poppins-Regular", sans-serif;
 }
 
-.footerContainer {
-    display: flex;
-    justify-content: center;
+button {
+    font-size: 1rem;
+    color: darkred;
+    background-color: ghostwhite;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+button:hover {
+    font-size: 1rem;
+    color: ghostwhite;
+    background-color: darkred;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
 }
 
 /* =================================
         home
  ================================= */
 .indexBody,
-.aboutBody {
+.aboutBody,
+.galleryBody,
+.climbsBody {
     background-image: url("../img/bg.jpg");
     background-position: top;
     background-repeat: no-repeat;
@@ -85,6 +101,11 @@ p {
 .homeMain img {
     width: 30%;
     border-radius: 10px;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .indexFooter {
@@ -148,14 +169,96 @@ p {
 }
 
 /* =================================
-        gallery
+        climbs
  ================================= */
-.galleryImages {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+.climbsMain {
+    margin: 50px 50px 0 50px;
+    background-color: rgba(71, 68, 69, 0.6);
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.galleryImages img {
-    width: 200px;
+.climbsMain h1 {
+    text-align: center;
+}
+
+.climbsMain h1,
+.climbsMain p {
+    color: ghostwhite;
+}
+
+.climbsMainSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.imgPContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.climbsMainSection a {
+    text-decoration: none;
+}
+
+.climbsMainSection .img {
     border-radius: 10px;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.climbsMain button {
+    display: none;
+}
+
+.climbsMain .words {
+    border-radius: 10px;
+    display: none;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* =================================
+        gallery
+ ================================= */
+
+.galleryMain {
+    margin: 50px 200px 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(71, 68, 69, 0.8);
+    border-radius: 10px;
+}
+
+.galleryMain h1,
+.galleryMain p {
+    color: ghostwhite;
+}
+
+.galleryMain img {
+    width: 500px;
+    border-radius: 10px;
+    border: 2px solid rgb(220, 4, 4);
+}
+
+.galleryMain a {
+    font-size: 1.4rem;
+    color: ghostwhite;
+    font-family: "Poppins-Bold", sans-serif;
+}
+
+.galleryMain a:hover {
+    color: rgb(220, 4, 4);
 }
